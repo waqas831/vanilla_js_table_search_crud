@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style></style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container flex align-center md-flex-col">
+        <h3 class="slogan">Search Products</h3>
+        <div class="custom-search">
+          <input
+          onKeyUp="search(this.value)"
+            type="text"
+            name="searchText"
+            id="searchText"
+            autocomplete="on"
+          />
+          <button onClick="search()">Search</button>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div id="result" class="result">
+        <button class="delete-all-btn" onClick="deleteAll()">
+          Delete all List
+        </button>
+        <table class="table-responsive">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>title</th>
+              <th>body</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody
+            id="result-table"
+            style="margin-top: 10px; margin-left: 30px"
+          ></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

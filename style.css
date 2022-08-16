@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background: rgb(0, 60, 170);
+    padding: 15px 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.content-between {
+    justify-content: space-between;
+}
+
+header .slogan {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 30px 0 0;
+}
+
+header .custom-search {
+    width: 480px;
+    height: 32px;
+    border-radius: 50px;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid #ffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+header .custom-search input[type=text] {
+    width: calc(100% - 80px);
+    height: 32px;
+    border: 0px;
+    outline: none;
+    padding: 0px 15px;
+}
+
+header .custom-search button {
+    width: 80px;
+    line-height: 32px;
+    background-color: rgb(86, 145, 255);
+    outline: none;
+    border: 0px;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+header input[type=search]:focus {
+    outline: none;
+}
+
+.table-responsive {
+    width: 100%;
+}
+
+#result {
+
+    padding: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+#result ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#result ul li {
+    padding: 5px 0;
+}
+
+#result ul li:hover {
+    background: #eee;
+}
+
+.table-responsive {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-responsive thead tr th {
+    background: #ccc;
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.table-responsive tbody tr:nth-child(even) {
+    background: #F7F7F7;
+    padding: 3px;
+}
+
+.table-responsive tr td {
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.delete-all-btn {
+    background: red;
+    display: block;
+    border-radius: 50px;
+    color: #fff;
+    border: 0px;
+    outline: none;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin: 0 0 15px auto;
+    font-weight: bold;
+}
+
+.form-button {
+    display: block;
+    border-radius: 50px;
+    color: aliceblue;
+    border: 0px;
+    outline: none;
+    width: 83px;
+    height: 33px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.save-btn {
+    background: #4CAF50;
+
+}
+
+.edit-btn {
+    background: #008CBA;
+}
+
+.delete-btn {
+    background: #f44336;
+}
+
+@media screen and (max-width: 375px) {
+    .md-flex-col {
+        flex-direction: column;
+    }
+
+    .md-align-center {
+        justify-content: center;
+    }
+
+    header .custom-search {
+        width: 100%;
+    }
+
+    header .slogan {
+        margin: 0 0 15px 0;
+    }
+}
